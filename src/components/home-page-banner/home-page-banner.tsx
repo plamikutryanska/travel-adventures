@@ -7,7 +7,7 @@ import mountainPic from "../../images/mountains.png";
 export const HomePageBanner: FC = () => {
   return (
     <div className={styles.homePageBanner}>
-      <Link href={"/"}>
+      <Link href={"/"} className={styles.logoAndTitleWrapper}>
         <Image
           src={mountainPic}
           alt={"mountain image"}
@@ -15,6 +15,7 @@ export const HomePageBanner: FC = () => {
           width={40}
           style={{ cursor: "pointer" }}
         />
+        <div className={styles.title}>{"The footsteps of a curious mind"}</div>
       </Link>
     </div>
   );

@@ -1,6 +1,5 @@
 import { FC } from "react";
 import { HomePageBanner } from "../home-page-banner/home-page-banner";
-import styles from "../home-page-banner/home-page-banner.module.scss";
 
 type PageLayout = {
   children: React.ReactNode;
