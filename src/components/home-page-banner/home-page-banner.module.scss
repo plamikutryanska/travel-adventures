@@ -7,7 +7,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 24px;
   color: black !important;
   justify-content: space-between;
 
@@ -15,6 +14,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-left: 24px;
 
     .title {
       text-transform: uppercase;
@@ -24,11 +24,18 @@
     }
   }
 
+  @media (max-width: 950px) {
+    .pageLinks {
+      display: none;
+    }    
+  }
+
   .pageLinks {
     text-transform: uppercase;
     font-family: 'Courier New', Courier, monospace;
     white-space: nowrap;
     flex-shrink: 1;
+    margin-right: 24px;
 
     .link {
       margin: 8px;
@@ -40,5 +47,4 @@
       text-decoration: underline;
     }
   }
-
 }

@@ -5,8 +5,9 @@ import styles from "./home-page-banner.module.scss";
 import mountainPic from "../../images/mountains.png";
 import classNames from "classnames";
 import { useRouter } from "next/router";
+import { HamburgerMenu } from "../hamburger-menu/hamburger-menu";
 
-type AvailableLinks = "home" | "about" | "gallery" | "contact";
+export type AvailableLinks = "home" | "about" | "gallery" | "contact";
 
 export const GetLinksToDisplay = (
   href: AvailableLinks,
@@ -32,6 +33,7 @@ export const GetLinksToDisplay = (
 
 export const HomePageBanner: FC = () => {
   const [selectedLink, setSelectedLink] = useState<AvailableLinks>("home");
+
   const listOfPageLinks: AvailableLinks[] = [
     "home",
     "about",
@@ -51,6 +53,7 @@ export const HomePageBanner: FC = () => {
         />
         <div className={styles.title}>{"The footsteps of a curious mind"}</div>
       </Link>
+      <HamburgerMenu listOfPageLinks={listOfPageLinks} />
       <div className={styles.pageLinks}>
         {listOfPageLinks.map((link) =>
           GetLinksToDisplay(link, setSelectedLink, selectedLink)

@@ -1,0 +1,43 @@
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 950px){
+  .hamburger {
+    display: flex;
+    transition: transform 300ms ease-in;
+    margin-right: 24px;
+  }
+}
+
+.hamburgerSideBar{
+  display: none;
+}
+
+@media (max-width: 950px){
+  .hamburgerSideBar {
+    width: 100vw;
+    height: 50vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 120px;
+    z-index: 0;
+  
+    .hamburgerLink {
+      background-color: #f5ebe0;
+      border-bottom: 2px solid white;
+      height: 32px;
+      padding: 24px;
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      font-family: 'Courier New', Courier, monospace;
+    }
+  
+    .hamburgerLink:hover {
+      background-color: #e3d5ca;
+    }
+  }
+  
+}
