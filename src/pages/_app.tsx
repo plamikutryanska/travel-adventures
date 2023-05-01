@@ -5,7 +5,7 @@ import type { AppProps } from "next/app";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <PageLayout>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </PageLayout>
   );
 }

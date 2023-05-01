@@ -8,7 +8,7 @@ export const LandingPage: FC = () => {
 
   useEffect(() => {
     if (window) {
-      const widthToUse = window.innerWidth <= 600 ? 200 : 300;
+      const widthToUse = window.innerWidth < 950 ? 200 : 300;
       return setWidthAndHeight(widthToUse);
     } else setWidthAndHeight(300);
   }, []);

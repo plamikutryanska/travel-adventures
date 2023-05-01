@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { HomePageBanner } from "../home-page-banner/home-page-banner";
+import { HomePageFooter } from "../home-page-footer/home-page-footer";
 
 type PageLayout = {
   children: React.ReactNode;
@@ -12,7 +13,9 @@ export const PageLayout: FC<PageLayout> = ({ children }) => {
         <HomePageBanner />
       </div>
       <div>{children}</div>
-      <div style={{ height: "60px" }}>{"FOOTERS"}</div>
+      <div style={{ height: "60px" }}>
+        <HomePageFooter />
+      </div>
     </>
   );
 };
