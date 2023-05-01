@@ -26,8 +26,8 @@ export const HomePageFooter: FC = () => {
           <Image
             src={linkedInLogo}
             alt={"LinkedIn logo"}
-            width={16}
-            height={16}
+            width={14}
+            height={14}
             onClick={() =>
               openSocialMediaLink("https://www.linkedin.com/in/pkutryanska/")
             }
@@ -35,8 +35,8 @@ export const HomePageFooter: FC = () => {
           <Image
             src={instagramLogo}
             alt={"instagram logo"}
-            width={22}
-            height={22}
+            width={20}
+            height={20}
             onClick={() =>
               openSocialMediaLink("https://www.instagram.com/plamenak_")
             }

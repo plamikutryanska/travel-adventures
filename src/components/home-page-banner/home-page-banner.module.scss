@@ -9,6 +9,7 @@
   align-items: center;
   padding: 24px;
   color: black !important;
+  justify-content: space-between;
 
   .logoAndTitleWrapper {
     display: flex;
@@ -20,6 +21,23 @@
       font-family: 'Courier New', Courier, monospace;
       margin-left: 12px;
       font-size: 12px;
+    }
+  }
+
+  .pageLinks {
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: nowrap;
+    flex-shrink: 1;
+
+    .link {
+      margin: 8px;
+    }
+
+    & :hover,
+    & .selected {
+      color: blue;
+      text-decoration: underline;
     }
   }
 
