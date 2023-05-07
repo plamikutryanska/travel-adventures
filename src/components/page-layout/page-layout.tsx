@@ -12,8 +12,10 @@ export const PageLayout: FC<PageLayout> = ({ children }) => {
       <div style={{ height: "120px" }}>
         <HomePageBanner />
       </div>
-      <div>{children}</div>
-      <div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        {children}
+      </div>
+      <div style={{ height: "60px" }}>
         <HomePageFooter />
       </div>
     </>

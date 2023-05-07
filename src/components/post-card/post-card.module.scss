@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.postCardContainer {
+  width: 600px;
+  height: 400px;
+  margin-left: -200px;
+  background-color: white;
+  color: black !important;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  transform: rotate(5deg);
+
+  .leftSide {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px dashed black;
+
+    .stampHeight {
+      height: 200px;
+    }
+    
+    .greeting {
+      font-family: Dancing Script;
+      font-size: 100px;
+    }
+
+    .otherText {
+      font-family: Architects Daughter;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    .location {
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      letter-spacing: 2px;
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 600px) {
+      .greeting {
+        font-size: 60px;
+      }
+      .otherText {
+        font-size: 10px;
+      }
+  
+      .location {
+        font-size: 16px;
+      }
+    }
+  
+  }
+
+  .rightSide {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .innerContainer {
+      width: 260px;
+      height: 360px;
+      overflow: hidden,
+    }
+
+    @media (max-width: 600px) {
+      .innerContainer {
+        width: 140px;
+        height: 260px;
+        display: flex;
+      }
+    }
+  }
+}
+
+.imageInCarousel {
+  height: 360px;
+  width: 260px
+}
+
+@media (max-width: 600px){
+  .postCardContainer {
+    width: 320px;
+    height: 240px;
+  }
+
+  .imageInCarousel {
+    width: 160px;
+    height: 200px;
+  }
+}

@@ -7,7 +7,7 @@ import classNames from "classnames";
 import { useRouter } from "next/router";
 import { HamburgerMenu } from "../hamburger-menu/hamburger-menu";
 
-export type AvailableLinks = "home" | "about" | "gallery" | "contact";
+export type AvailableLinks = "home" | "gallery";
 
 export const GetLinksToDisplay = (
   href: AvailableLinks,
@@ -36,9 +36,9 @@ export const HomePageBanner: FC = () => {
 
   const listOfPageLinks: AvailableLinks[] = [
     "home",
-    "about",
+    // "about",
     "gallery",
-    "contact",
+    // "contact",
   ];
 
   return (

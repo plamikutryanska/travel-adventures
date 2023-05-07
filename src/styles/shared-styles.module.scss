@@ -1,9 +1,11 @@
 .commonContainer {
+  text-align: center;
   display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw;
+  align-items: center;
   justify-content: center;
-  background-color: white;
-  color: black !important;
-  padding: 32px;
-  height: 100vh;
-  overflow: hidden;
+  background: white;
+  padding: 24px;
 }
