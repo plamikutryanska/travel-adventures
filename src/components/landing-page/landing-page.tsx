@@ -2,6 +2,7 @@ import { FC, useState, useEffect } from "react";
 import styles from "./landing-page.module.scss";
 import stylesv2 from "../../styles/shared-styles.module.scss";
 import Postcard from "../post-card/post-card";
+import ExploreByDestination from "../explore-by-destination/explore-by-destination";
 
 export const LandingPage: FC = () => {
   const [widthAndHeight, setWidthAndHeight] = useState<number>(250);
@@ -19,6 +20,7 @@ export const LandingPage: FC = () => {
         <div className={styles.landingPageShape} />
         <Postcard />
       </div>
+      <ExploreByDestination />
     </div>
   );
 };

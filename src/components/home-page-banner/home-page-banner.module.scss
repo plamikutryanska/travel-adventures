@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
 .homePageBanner {
   background-color: white;
   height: 120px;
@@ -19,9 +21,9 @@
 
     .title {
       text-transform: uppercase;
-      font-family: 'Courier New', Courier, monospace;
+      font-family: Shadows Into Light;;
       margin-left: 12px;
-      font-size: 12px;
+      font-size: 18px;
     }
   }
 
@@ -33,10 +35,11 @@
 
   .pageLinks {
     text-transform: uppercase;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Shadows Into Light;
     white-space: nowrap;
     flex-shrink: 1;
     margin-right: 24px;
+    font-size: 18px;
 
     .link {
       margin: 8px;

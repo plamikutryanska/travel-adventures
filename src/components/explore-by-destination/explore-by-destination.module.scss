@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+.titleWrapper {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  height: 46px;
+  margin-top: 32px;
+}
+
+.title {
+  font-family: Shadows Into Light;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: black !important
+}
+
+.tooltip {
+  display: none;
+}
+
+.locationPin {
+  cursor: pointer;
+}
+
+.locationPin:hover +.tooltip {
+  display: block;
+  font-family: Shadows Into Light;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10px;
+  color: black !important;
+
+}

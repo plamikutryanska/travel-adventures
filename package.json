@@ -19,6 +19,10 @@
     "react": "18.2.0",
     "react-alice-carousel": "^2.7.1",
     "react-dom": "18.2.0",
+    "react-simple-maps": "^3.0.0",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "@types/react-simple-maps": "^3.0.0"
   }
 }
