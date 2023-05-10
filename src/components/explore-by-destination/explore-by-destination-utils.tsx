@@ -1,8 +1,22 @@
 type DestinationsToPinOnMap = {
   markerOffset: number;
-  name: string;
+  name: CountriesVisited;
   coordinates: number[];
 };
+
+export type CountriesVisited =
+  | "Bulgaria"
+  | "Mexico"
+  | "USA"
+  | "Dominican Republic"
+  | "Puerto Rico"
+  | "Italy"
+  | "Greece"
+  | "Turkey"
+  | "Japan"
+  | "Thailand"
+  | "Vietnam"
+  | "";
 
 export const destinationsToPinOnMap: DestinationsToPinOnMap[] = [
   { markerOffset: -30, name: "Bulgaria", coordinates: [25.48583, 42.733883] },

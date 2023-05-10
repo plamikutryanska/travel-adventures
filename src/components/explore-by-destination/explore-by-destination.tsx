@@ -7,10 +7,19 @@ import {
   Marker,
 } from "react-simple-maps";
 import { destinationsToPinOnMap } from "./explore-by-destination-utils";
+import { useSelector, useDispatch } from "react-redux";
+import destinationSlice from "../../data/destinationSlice";
 
 const ExploreByDestination: FC = () => {
   const geoUrl =
     "https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries.json";
+
+  //MAY NOT NEED THE SELECTED DESTINATION IN THIS COMPONENT
+  const { selectedDestination } = useSelector(
+    (state: any) => state.destination
+  );
+  const { goToDestination } = destinationSlice.actions;
+  const dispatch = useDispatch();
 
   return (
     <>
@@ -41,7 +50,7 @@ const ExploreByDestination: FC = () => {
           <Marker
             coordinates={coordinates as [number, number]}
             key={name}
-            onClick={() => console.log("in marker ====>")}>
+            onClick={() => dispatch(goToDestination(name))}>
             <g
               fill='none'
               stroke='black'
