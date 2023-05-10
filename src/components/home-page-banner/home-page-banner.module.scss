@@ -25,12 +25,17 @@
       margin-left: 12px;
       font-size: 18px;
     }
+    @media (max-width: 950px) {
+      .title {
+        font-size: 14px;
+      } 
+    }
   }
 
   @media (max-width: 950px) {
     .pageLinks {
       display: none;
-    }    
+    }   
   }
 
   .pageLinks {

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+.galleryPageWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: white;
+    padding: 24px;
+
+    .titleWrapper {
+      border-bottom: 1px solid black;
+      border-top: 1px solid black;
+      height: 46px;
+      margin-bottom: 32px;
+    }
+    
+    .title {
+      font-family: Shadows Into Light;
+      font-size: 24px;
+      text-transform: uppercase;
+      color: black !important
+    }
+
+    @media (max-width: 600px) {
+      .galleryPageWrapper{
+        margin-left: -136px;
+      }
+    }
+
+    .countryAlbumsWrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 845px;
+    }
+}
+

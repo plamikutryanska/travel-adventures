@@ -7,7 +7,7 @@ import classNames from "classnames";
 import { useRouter } from "next/router";
 import { HamburgerMenu } from "../hamburger-menu/hamburger-menu";
 
-export type AvailableLinks = "home" | "gallery";
+export type AvailableLinks = "home" | "gallery" | "";
 
 export const GetLinksToDisplay = (
   href: AvailableLinks,
@@ -16,9 +16,12 @@ export const GetLinksToDisplay = (
   setHamburgerOpen?: Dispatch<SetStateAction<boolean>>
 ) => {
   const router = useRouter();
+  const hrefToUse = href === "home" ? "/" : href;
+
   return (
     <Link
-      href={"/"} //change that
+      href={hrefToUse}
+      key={href}
       onClick={() => (
         setSelectedLink(href), setHamburgerOpen && setHamburgerOpen(false)
       )}
@@ -32,14 +35,9 @@ export const GetLinksToDisplay = (
 };
 
 export const HomePageBanner: FC = () => {
-  const [selectedLink, setSelectedLink] = useState<AvailableLinks>("home");
+  const [selectedLink, setSelectedLink] = useState<AvailableLinks>("");
 
-  const listOfPageLinks: AvailableLinks[] = [
-    "home",
-    // "about",
-    "gallery",
-    // "contact",
-  ];
+  const listOfPageLinks: AvailableLinks[] = ["home", "gallery"];
 
   return (
     <div className={styles.homePageBanner}>

@@ -1,0 +1,35 @@
+.photoFrame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 24px;
+
+  .innerPhotoSection {
+    border: 1px solid white;
+    background: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    height: 320px;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+
+    & :hover {
+      opacity: 0.5;
+    }
+  }
+
+  .photoLable {
+    width: 140px;
+    height: 40px;
+    background: #f5ebe0;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    margin-top: -24px;
+  }
+}
