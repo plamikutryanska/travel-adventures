@@ -4,8 +4,8 @@ import styles from "./landing-page.module.scss";
 import stylesv2 from "../../styles/shared-styles.module.scss";
 import Postcard from "../post-card/post-card";
 import ExploreByDestination from "../explore-by-destination/explore-by-destination";
-import footstepsLogo from "../../images/logo.png";
 import chicago from "../../images/countries/usa/chicago1.jpeg";
+import GetToKnowMe from "../get-to-know-me/get-to-know-me";
 
 export const LandingPage: FC = () => {
   const [widthAndHeight, setWidthAndHeight] = useState<number>(250);
@@ -31,18 +31,10 @@ export const LandingPage: FC = () => {
         <div className={styles.smallerText}>
           {"a digital collection of travel memories"}
         </div>
+        <button className={styles.viewGalleryButton}>{"view gallery"}</button>
       </div>
-      <div className={styles.titleWrapper}>
-        <div className={styles.title}>{"get to know me"}</div>
-      </div>
-      <div className={styles.aboutMeSection}>
-        <div className={styles.border}>
-          <div className={styles.left}>
-            <div className={styles.leftInnerContainer}>{"left"}</div>
-          </div>
-          <div className={styles.right}>{"right"}</div>
-        </div>
-      </div>
+
+      <GetToKnowMe />
       <Postcard />
       <ExploreByDestination />
     </div>
