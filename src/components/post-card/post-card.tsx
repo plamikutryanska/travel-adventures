@@ -34,7 +34,7 @@ const Postcard: FC = () => {
     2: "Bezbog Hut",
   };
 
-  const [widthAndHeight, setWidthAndHeight] = useState<number>(200);
+  const [widthAndHeight, setWidthAndHeight] = useState<number>(160);
   const [imageIndex, setImageIndex] = useState<number>(0);
   const [placeLocation, setPlaceLocation] = useState<ImageLocations>(
     slideNumberToLocation[imageIndex]
@@ -42,9 +42,9 @@ const Postcard: FC = () => {
 
   useEffect(() => {
     if (window) {
-      const widthToUse = window.innerWidth <= 600 ? 120 : 180;
+      const widthToUse = window.innerWidth <= 950 ? 100 : 160;
       return setWidthAndHeight(widthToUse);
-    } else setWidthAndHeight(200);
+    } else setWidthAndHeight(160);
   }, []);
 
   useEffect(() => {
@@ -60,7 +60,7 @@ const Postcard: FC = () => {
           width={widthAndHeight}
           height={widthAndHeight}
         />
-        <div>
+        <div style={{ marginTop: "-12px" }}>
           <div className={styles.greeting}>{"Hello"}</div>
           <div className={styles.otherText}>{"from beautiful"}</div>
           <div className={styles.location}>{placeLocation}</div>

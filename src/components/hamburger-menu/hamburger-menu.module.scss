@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
 .hamburger {
   display: none;
 }
@@ -25,18 +27,18 @@
     z-index: 0;
   
     .hamburgerLink {
-      background-color: #f5ebe0;
+      background-color: #ccd5ae;
       border-bottom: 2px solid white;
       height: 32px;
       padding: 24px;
       display: flex;
       align-items: center;
       text-transform: uppercase;
-      font-family: 'Courier New', Courier, monospace;
+      font-family: Shadows Into Light;
     }
   
     .hamburgerLink:hover {
-      background-color: #e3d5ca;
+      background-color: #bbc795;
     }
   }
   

@@ -29,8 +29,8 @@ const ExploreByDestination: FC = () => {
       <ComposableMap>
         <Geographies
           geography={geoUrl}
-          fill='#f5ebe0'
-          stroke='#ce96a6'
+          fill='#ccd5ae'
+          stroke='#a1af72'
           strokeWidth={"0.5px"}>
           {({ geographies }) =>
             geographies.map((geo: any) => (
@@ -39,7 +39,7 @@ const ExploreByDestination: FC = () => {
                 geography={geo}
                 style={{
                   hover: {
-                    fill: "#ce96a6",
+                    fill: "#bbc795",
                   },
                 }}
               />

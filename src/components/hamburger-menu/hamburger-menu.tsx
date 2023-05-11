@@ -19,9 +19,10 @@ export const HamburgerMenu: FC<{ listOfPageLinks: AvailableLinks[] }> = ({
       {isHamburgerMenuOpen && (
         <div className={styles.hamburgerSideBar}>
           {listOfPageLinks.map((link) => {
+            const href = link === "home" ? "/" : link;
             return (
               <Link
-                href={"/"}
+                href={href}
                 className={styles.hamburgerLink}
                 key={link}
                 onClick={() => setIsHamburgerOpen(false)}>
