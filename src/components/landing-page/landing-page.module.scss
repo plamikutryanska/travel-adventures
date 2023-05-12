@@ -21,21 +21,24 @@
   .smallerText {
     position: absolute;
     color: black;
-    font-size: 18px;
+    font-size: 20px;
     font-family: Vina Sans;
     margin-top: 96px;
   }
 
   .viewGalleryButton {
-    border: 2px solid white;
     color: black;
+    background: white;
     opacity: 0.8;
     text-transform: uppercase;
     width: 120px;
     height: 32px;
     position: absolute;
     bottom: 184px;
-    cursor: pointer;
+    font-size: 14px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 
     &:hover {
       background-color: black;
