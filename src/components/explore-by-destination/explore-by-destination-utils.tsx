@@ -15,8 +15,8 @@ export type CountriesVisited =
   | "Turkey"
   | "Japan"
   | "Thailand"
-  | "Vietnam";
-// | "";
+  | "Vietnam"
+  | " ";
 
 export const destinationsToPinOnMap: DestinationsToPinOnMap[] = [
   { markerOffset: -30, name: "Bulgaria", coordinates: [25.48583, 42.733883] },

@@ -3,8 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import backButton from "../../../images/back-arrow.png";
 import styles from "../gallery-by-country/gallery-by-country.module.scss";
+import { useSelector } from "react-redux";
 
 const GalleryByCountry: FC = () => {
+  const { selectedDestination } = useSelector(
+    (state: any) => state.destination
+  );
+
   return (
     <div style={{ display: "flex" }}>
       <Link href={"/gallery"} className={styles.backButton}>
@@ -15,6 +20,7 @@ const GalleryByCountry: FC = () => {
           width={36}
         />
       </Link>
+      <div style={{ fontSize: "48px" }}>{selectedDestination}</div>
     </div>
   );
 };

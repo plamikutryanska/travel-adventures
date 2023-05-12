@@ -9,28 +9,21 @@
     min-width: 100vw;
     background: white;
     padding: 24px;
+    position: relative;
 
   .funShape {
     background: #ccd5ae;
     height: 360px;
     width: 360px;
     border-radius: 50%;
-    top: -80px;
+    top: -142px;
     left: -92px;
     position: absolute;
   }
 
-  @media (max-width: 600px){
-    .funShape {
-      height: 240px;
-      width: 240px;
-      top: 0;
-    }
-  }
-
-  .halfCircleSide {
+  .halfCircleRightSide {
     position: absolute;
-    top: 50%;
+    top: 20%;
     right: 0;
     height: 300px;
     width: 150px;
@@ -38,11 +31,14 @@
     background-color: #ccd5ae;
   }
 
-  @media (max-width: 600px){
-    .halfCircleSide {
-      height: 200px;
-      width: 100px;
-    }
+  .halfCircleLeftSide {
+    position: absolute;
+    bottom: 40%;
+    left: 0;
+    height: 300px;
+    width: 150px;
+    border-radius: 0 150px 150px 0;
+    background-color: #ccd5ae;
   }
 
     .titleWrapper {
@@ -60,17 +56,30 @@
       color: black !important
     }
 
-    @media (max-width: 600px) {
-      .galleryPageWrapper{
-        margin-left: -136px;
-      }
-    }
-
     .countryAlbumsWrapper {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       max-width: 845px;
+    }
+
+    @media (max-width: 600px){
+      .funShape {
+        height: 240px;
+        width: 240px;
+        top: 0;
+      }
+      .halfCircleRightSide {
+        height: 200px;
+        width: 100px;
+      }
+      .halfCircleLeftSide {
+        height: 200px;
+        width: 100px;
+      }
+      .galleryPageWrapper{
+        margin-left: -136px;
+      }
     }
 }
 

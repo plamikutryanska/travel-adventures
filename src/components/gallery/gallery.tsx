@@ -5,6 +5,9 @@ import plovdiv from "../../images/plovdivRomanTheater.jpg";
 import thasos from "../../images/countries/greece/thasos2.jpeg";
 import chicago from "../../images/countries/usa/chicago1.jpeg";
 import galata from "../../images/countries/turkey/galata1.jpg";
+import mexico from "../../images/countries/mexico/mexico2.jpg";
+import puertoRico from "../../images/countries/puerto-rico/puerto-rico1.jpeg";
+import dominicanRepublic from "../../images/countries/dominican-republic/dominican-republic1.jpeg";
 
 type ListOfCountriesAndPics = {
   albumCover: string | any;
@@ -31,6 +34,9 @@ const availableCountries = [
   { albumCover: thasos, albumTitle: "Greece" },
   { albumCover: galata, albumTitle: "Turkey" },
   { albumCover: chicago, albumTitle: "USA" },
+  { albumCover: mexico, albumTitle: "Mexico" },
+  { albumCover: puertoRico, albumTitle: "Puerto Rico" },
+  { albumCover: dominicanRepublic, albumTitle: "Dominican Republic" },
 ];
 
 const Gallery: FC = () => {
@@ -43,7 +49,8 @@ const Gallery: FC = () => {
       <div className={styles.countryAlbumsWrapper}>
         {getAlbumCover(availableCountries)}
       </div>
-      <div className={styles.halfCircleSide} />
+      <div className={styles.halfCircleRightSide} />
+      <div className={styles.halfCircleLeftSide} />
     </div>
   );
 };
