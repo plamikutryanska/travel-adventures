@@ -7,11 +7,6 @@ import styles from "../gallery-by-country/gallery-by-country.module.scss";
 const GalleryByCountry: FC = () => {
   return (
     <div style={{ display: "flex" }}>
-      {/* <div style={{ display: "flex", flexDirection: "row" }}>
-        <div className={styles.funBackground} />
-        <div />
-      </div> */}
-
       <Link href={"/gallery"} className={styles.backButton}>
         <Image
           src={backButton}

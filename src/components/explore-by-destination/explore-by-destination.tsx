@@ -7,18 +7,17 @@ import {
   Marker,
 } from "react-simple-maps";
 import { destinationsToPinOnMap } from "./explore-by-destination-utils";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import destinationSlice from "../../data/destinationSlice";
+import selectedTabSlice from "../../data/selectedTabSlice";
+import Link from "next/link";
 
 const ExploreByDestination: FC = () => {
   const geoUrl =
     "https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries.json";
 
-  //MAY NOT NEED THE SELECTED DESTINATION IN THIS COMPONENT
-  const { selectedDestination } = useSelector(
-    (state: any) => state.destination
-  );
   const { goToDestination } = destinationSlice.actions;
+  const { goToSelectedTab } = selectedTabSlice.actions;
   const dispatch = useDispatch();
 
   return (
@@ -47,34 +46,38 @@ const ExploreByDestination: FC = () => {
           }
         </Geographies>
         {destinationsToPinOnMap.map(({ name, coordinates, markerOffset }) => (
-          <Marker
-            coordinates={coordinates as [number, number]}
-            key={name}
-            onClick={() => dispatch(goToDestination(name))}>
-            <g
-              fill='none'
-              stroke='black'
-              strokeWidth='1'
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              transform='translate(-12, -24)'
-              className={styles.locationPin}>
-              <circle
-                cx='12'
-                cy='10'
-                r='3'
-                fill='black'
-                className={styles.locationPin}
-              />
-              <path d='M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z' />
-            </g>
-            <text
-              y={markerOffset}
-              textAnchor='middle'
-              className={styles.tooltip}>
-              {name}
-            </text>
-          </Marker>
+          <Link
+            href={`/gallery/${name}`}
+            onClick={() => dispatch(goToSelectedTab("gallery"))}>
+            <Marker
+              coordinates={coordinates as [number, number]}
+              key={name}
+              onClick={() => dispatch(goToDestination(name))}>
+              <g
+                fill='none'
+                stroke='black'
+                strokeWidth='1'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                transform='translate(-12, -24)'
+                className={styles.locationPin}>
+                <circle
+                  cx='12'
+                  cy='10'
+                  r='3'
+                  fill='black'
+                  className={styles.locationPin}
+                />
+                <path d='M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z' />
+              </g>
+              <text
+                y={markerOffset}
+                textAnchor='middle'
+                className={styles.tooltip}>
+                {name}
+              </text>
+            </Marker>
+          </Link>
         ))}
       </ComposableMap>
     </>

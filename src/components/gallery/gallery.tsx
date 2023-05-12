@@ -36,12 +36,14 @@ const availableCountries = [
 const Gallery: FC = () => {
   return (
     <div className={styles.galleryPageWrapper}>
+      <div className={styles.funShape} />
       <div className={styles.titleWrapper}>
         <div className={styles.title}>{"explore by country"}</div>
       </div>
       <div className={styles.countryAlbumsWrapper}>
         {getAlbumCover(availableCountries)}
       </div>
+      <div className={styles.halfCircleSide} />
     </div>
   );
 };

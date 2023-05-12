@@ -23,9 +23,9 @@ const LandingPageTopPart: FC = () => {
         {"a digital collection of travel memories"}
       </div>
       <Link
-        href={"/gallery"}
+        href={"gallery"}
         className={styles.viewGalleryButton}
-        onClick={() => dispatch(goToSelectedTab("/gallery"))}>
+        onClick={() => dispatch(goToSelectedTab("gallery"))}>
         {"view gallery"}
       </Link>
     </div>

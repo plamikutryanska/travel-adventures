@@ -31,8 +31,8 @@ export const GetLinksToDisplay = (
         setHamburgerOpen && setHamburgerOpen(false)
       )}
       className={classNames(styles.link, {
-        [styles.selected]:
-          selectedTab === href || router.pathname.includes(href),
+        [styles.selected]: href === selectedTab,
+        // router.pathname.includes(href) || hrefToUse.includes(selectedTab),
       })}>
       {href}
     </Link>
@@ -43,6 +43,8 @@ export const HomePageBanner: FC = () => {
   const { selectedTab } = useSelector((state: any) => state.selectedTab);
   const { goToSelectedTab } = selectedTabSlice.actions;
   const dispatch = useDispatch();
+
+  console.log("selectedTab ===>", selectedTab);
 
   const listOfPageLinks: AvailableLinks[] = ["home", "gallery"];
 

@@ -10,11 +10,47 @@
     background: white;
     padding: 24px;
 
+  .funShape {
+    background: #ccd5ae;
+    height: 360px;
+    width: 360px;
+    border-radius: 50%;
+    top: -80px;
+    left: -92px;
+    position: absolute;
+  }
+
+  @media (max-width: 600px){
+    .funShape {
+      height: 240px;
+      width: 240px;
+      top: 0;
+    }
+  }
+
+  .halfCircleSide {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 300px;
+    width: 150px;
+    border-radius: 150px 0 0 150px;
+    background-color: #ccd5ae;
+  }
+
+  @media (max-width: 600px){
+    .halfCircleSide {
+      height: 200px;
+      width: 100px;
+    }
+  }
+
     .titleWrapper {
       border-bottom: 1px solid black;
       border-top: 1px solid black;
       height: 46px;
       margin-bottom: 32px;
+      z-index: 1
     }
     
     .title {
