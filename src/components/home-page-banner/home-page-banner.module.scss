@@ -29,14 +29,17 @@
       .title {
         font-size: 14px;
       } 
+      .pageLinks {
+        display: none;
+      }   
     }
   }
 
-  @media (max-width: 950px) {
-    .pageLinks {
-      display: none;
-    }   
-  }
+  // @media (max-width: 950px) {
+  //   .pageLinks {
+  //     display: none;
+  //   }   
+  // }
 
   .pageLinks {
     text-transform: uppercase;

@@ -9,7 +9,7 @@ import { HamburgerMenu } from "../hamburger-menu/hamburger-menu";
 import { useSelector, useDispatch } from "react-redux";
 import selectedTabSlice from "../../data/selectedTabSlice";
 
-export type AvailableLinks = "home" | "gallery" | "";
+export type AvailableLinks = "home" | "gallery";
 
 export const GetLinksToDisplay = (
   href: AvailableLinks,

@@ -34,7 +34,7 @@
     width: 120px;
     height: 32px;
     position: absolute;
-    bottom: 184px;
+    margin-top: 172px;
     font-size: 14px;
     align-items: center;
     display: flex;
@@ -46,7 +46,7 @@
     }
   }
 
-  @media (max-width: 950px) {
+  @media (max-width: 650px) {
     .textBlock{
       font-size: 18px;
     }
@@ -58,50 +58,33 @@
   }
 }
 
-.landingPageShapeV2 {
+.landingPageShape {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 32px;
-    width: 80vw;
-    height: 550px;;
-    border-radius: 51rem 50rem 0 0;
-    object-fit: cover
-
-}
-
-.travelStamp {
-  margin-top: -180px;
-  margin-left: 220px;
-}
-
-.pageLogo {
-  width:240px;
-  height:240px;
-  margin-top: 32px;
-}
-
-.squareShape {
-  background: #f5ebe0;
-  height: 400px;
-  margin-top:22px;
-  min-width: 260px;
-  width: 100%;
-}
-
-
-.separator {
-  border-bottom: 2px dotted black ;
   width: 80vw;
+  height: 550px;;
+  border-radius: 51rem 51rem 0 0;
+  object-fit: cover
 }
 
-@media (max-width: 950px) {
-  .landingPageShapeV2 {
-    height: 400px;
-  }
-
-  .pageLogo{
-    width:180px;
-    height:180px;
+@media (max-width: 950px){
+  .landingPageShape {
+    width: 100vw;
+    height: auto;
   }
 }
+
+// .travelStamp {
+//   margin-top: -180px;
+//   margin-left: 220px;
+// }
+
+// .squareShape {
+//   background: #f5ebe0;
+//   height: 400px;
+//   margin-top:22px;
+//   min-width: 260px;
+//   width: 100%;
+// }

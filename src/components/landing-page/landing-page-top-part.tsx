@@ -14,7 +14,7 @@ const LandingPageTopPart: FC = () => {
       <Image
         src={chicago}
         alt={"image of Chicago"}
-        className={styles.landingPageShapeV2}
+        className={styles.landingPageShape}
       />
       <div className={styles.textBlock}>
         {"the footsteps of a curious mind"}
