@@ -19,6 +19,18 @@
     flex-direction: column;
     border-right: 1px dashed black;
 
+    .stamp {
+      height: 140px;
+      width: 140px;
+    }
+
+    @media (max-width: 600px){
+      .stamp {
+        height: 100px;
+        width: 100px;
+      }
+    }
+
     .greeting {
       font-family: Dancing Script;
       font-size: 100px;
