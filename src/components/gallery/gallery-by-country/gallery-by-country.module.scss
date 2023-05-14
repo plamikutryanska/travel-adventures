@@ -1,13 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
 .galleryByCountry {
   display: flex;
   flex-direction: column;
+  align-items: center;
   min-height: 100vh;
   min-width: 100vw;
   background: white;
   padding: 24px;
+  position: relative;
+
 
   .backButton {
-    justify-content: flex-start;
-    align-items: flex-start;
+    position: absolute;
+    top: 0px;
+    left: 24px;
   }
+
+  .titleWrapper {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    height: 46px;
+    max-width: 220px;
+    margin-bottom: 32px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .title {
+    font-family: Shadows Into Light;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: black !important;
+  }
+
+  .filterButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: Shadows Into Light;
+    flex-wrap: wrap;
+    cursor: pointer;
+    margin-bottom: 24px;
+
+    .filterButton {
+      width: 120px;
+      height: 32px;
+      border-radius: 24px;
+      margin: 8px;
+      background:  #ccd5ae;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }  
+      & :hover,
+      & .selectedFilter {
+        background-color: #a6b37e;
+      }
+  }
+}
+
+.innerPageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

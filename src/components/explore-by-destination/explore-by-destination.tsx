@@ -48,7 +48,10 @@ const ExploreByDestination: FC = () => {
         {destinationsToPinOnMap.map(({ name, coordinates, markerOffset }) => (
           <Link
             href={`/gallery/${name}`}
-            onClick={() => dispatch(goToSelectedTab("gallery"))}>
+            onClick={() => {
+              dispatch(goToSelectedTab("gallery"));
+              dispatch(goToDestination(name));
+            }}>
             <Marker
               coordinates={coordinates as [number, number]}
               key={name}

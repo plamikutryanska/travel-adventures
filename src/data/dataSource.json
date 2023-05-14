@@ -1,0 +1,36 @@
+{
+  "data": {
+    "countries": [
+      {
+        "id": "mexico",
+        "name": "Mexico",
+        "photos": [
+          {
+            "id": 1,
+            "category": "food",
+            "description": "Playa del Carmen",
+            "image": "https://live.staticflickr.com/65535/52893007357_96926251ea_n.jpg"
+          },
+          {
+            "id": 2,
+            "category": "food",
+            "description": "Playa del Carmen",
+            "image": "https://live.staticflickr.com/65535/52893007357_96926251ea_n.jpg"
+          },
+          {
+            "id": 3,
+            "category": "food",
+            "description": "Playa del Carmen",
+            "image": "https://live.staticflickr.com/65535/52893007357_96926251ea_n.jpg"
+          },
+          {
+            "id": 4,
+            "category": "nature",
+            "description": "Tulum",
+            "image": "https://live.staticflickr.com/65535/52895937511_ca18940151_k.jpg"
+          }
+        ]
+      }
+    ]
+  }
+}
