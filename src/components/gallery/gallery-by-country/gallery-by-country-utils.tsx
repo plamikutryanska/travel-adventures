@@ -1,7 +1,9 @@
 import { DataResponse, Photo } from "../../../data/data-source-types";
 import Image from "next/image";
+import styles from "../gallery-by-country/gallery-by-country.module.scss";
+import classNames from "classnames";
 
-export type PhotoFilters = "show all" | "food" | "nature";
+export type PhotoFilters = "show all" | "food" | "nature" | "city";
 
 export const getPhotosFromCountry = (
   dataResponse: DataResponse,
@@ -23,6 +25,10 @@ export const getPicturesFromCity = (
   const cityPhotosToDisplay =
     selectedFilter === "show all" ? countryPhotos : filteredPhotos;
 
+  const sortedPhotosByDirection = cityPhotosToDisplay.sort((a, b) =>
+    b.imagePosition.localeCompare(a.imagePosition)
+  );
+
   return (
     <div
       style={{
@@ -30,16 +36,23 @@ export const getPicturesFromCity = (
         justifyContent: "center",
         flexWrap: "wrap",
       }}>
-      {cityPhotosToDisplay.map((photo) => {
+      {sortedPhotosByDirection.map((photo) => {
         return (
-          <div style={{ margin: "8px" }} key={photo.id}>
+          <div
+            key={photo.id}
+            className={classNames(styles.photoContainer, {
+              [styles.vertical]: photo.imagePosition === "vertical",
+              [styles.horizontal]: photo.imagePosition === "horizontal",
+            })}>
             <Image
               src={photo.image}
               alt={`image of ${photo.category}`}
               key={photo.id}
-              height={320}
-              width={240}
+              className={styles.photo}
+              height={photo.imagePosition === "horizontal" ? 300 : 400}
+              width={photo.imagePosition === "horizontal" ? 400 : 300}
             />
+            <div className={styles.overlay}>{photo.description}</div>
           </div>
         );
       })}

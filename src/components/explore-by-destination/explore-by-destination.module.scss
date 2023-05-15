@@ -20,6 +20,7 @@
 
 .locationPin {
   cursor: pointer;
+  z-index: 1
 }
 
 .locationPin:hover +.tooltip {

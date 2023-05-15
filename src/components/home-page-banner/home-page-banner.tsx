@@ -44,8 +44,6 @@ export const HomePageBanner: FC = () => {
   const { goToSelectedTab } = selectedTabSlice.actions;
   const dispatch = useDispatch();
 
-  console.log("selectedTab ===>", selectedTab);
-
   const listOfPageLinks: AvailableLinks[] = ["home", "gallery"];
 
   return (

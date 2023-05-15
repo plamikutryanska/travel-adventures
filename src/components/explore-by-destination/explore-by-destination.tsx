@@ -50,7 +50,7 @@ const ExploreByDestination: FC = () => {
             href={`/gallery/${name}`}
             onClick={() => {
               dispatch(goToSelectedTab("gallery"));
-              dispatch(goToDestination(name));
+              dispatch(goToDestination("name"));
             }}>
             <Marker
               coordinates={coordinates as [number, number]}

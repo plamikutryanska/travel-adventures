@@ -20,7 +20,12 @@ const GalleryByCountry: FC = () => {
   const [selectedPhotoFilter, setSelectedPhotoFilter] =
     useState<PhotoFilters>("show all");
 
-  const availablePhotoFilters: PhotoFilters[] = ["show all", "food", "nature"];
+  const availablePhotoFilters: PhotoFilters[] = [
+    "show all",
+    "food",
+    "nature",
+    "city",
+  ];
 
   const photosFromCountry = getPhotosFromCountry(
     dataSource,

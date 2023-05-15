@@ -9,25 +9,122 @@
             "id": 1,
             "category": "food",
             "description": "Playa del Carmen",
-            "image": "https://live.staticflickr.com/65535/52893007357_96926251ea_n.jpg"
+            "image": "https://live.staticflickr.com/65535/52893007357_96926251ea_n.jpg",
+            "imagePosition": "vertical"
           },
           {
             "id": 2,
-            "category": "food",
-            "description": "Playa del Carmen",
-            "image": "https://live.staticflickr.com/65535/52893007357_96926251ea_n.jpg"
+            "category": "nature",
+            "description": "Tulum",
+            "image": "https://live.staticflickr.com/65535/52895937511_ca18940151_k.jpg",
+            "imagePosition": "vertical"
+          }
+        ]
+      },
+      {
+        "id": "usa",
+        "name": "USA",
+        "photos": [
+          {
+            "id": 1,
+            "category": "city",
+            "description": "Chicago",
+            "image": "https://live.staticflickr.com/65535/52898632034_322fb310f8_c.jpg",
+            "imagePosition": "vertical"
+          }
+        ]
+      },
+      {
+        "id": "greece",
+        "name": "Greece",
+        "photos": [
+          {
+            "id": 1,
+            "category": "city",
+            "description": "Thasos",
+            "image": "https://live.staticflickr.com/65535/52898464436_817748dd02_c.jpg",
+            "imagePosition": "vertical"
+          },
+          {
+            "id": 2,
+            "category": "city",
+            "description": "Thasos",
+            "image": "https://live.staticflickr.com/65535/52898464406_269d72b838_c.jpg",
+            "imagePosition": "vertical"
+          }
+        ]
+      },
+      {
+        "id": "puertoRico",
+        "name": "Puerto Rico",
+        "photos": [
+          {
+            "id": 1,
+            "category": "city",
+            "description": "Old San Juan",
+            "image": "https://live.staticflickr.com/65535/52897891582_3e99a0d5f3_c.jpg",
+            "imagePosition": "vertical"
+          },
+          {
+            "id": 2,
+            "category": "city",
+            "description": "Old San Juan",
+            "image": "https://live.staticflickr.com/65535/52898632159_6d6b3d577f_c.jpg",
+            "imagePosition": "horizontal"
           },
           {
             "id": 3,
-            "category": "food",
-            "description": "Playa del Carmen",
-            "image": "https://live.staticflickr.com/65535/52893007357_96926251ea_n.jpg"
+            "category": "city",
+            "description": "Old San Juan",
+            "image": "https://live.staticflickr.com/65535/52897891582_3e99a0d5f3_c.jpg",
+            "imagePosition": "vertical"
+          }
+        ]
+      },
+      {
+        "id": "dominicanRepublic",
+        "name": "Dominican Republic",
+        "photos": [
+          {
+            "id": 1,
+            "category": "nature",
+            "description": "Punta Cana",
+            "image": "https://live.staticflickr.com/65535/52898914598_e7fdef5d70_c.jpg",
+            "imagePosition": "horizontal"
+          }
+        ]
+      },
+      {
+        "id": "bulgaria",
+        "name": "Bulgaria",
+        "photos": [
+          {
+            "id": 1,
+            "category": "city",
+            "description": "Plovdiv",
+            "image": "https://live.staticflickr.com/65535/52899066153_e9832efd42_z.jpg",
+            "imagePosition": "vertical"
+          },
+          {
+            "id": 2,
+            "category": "city",
+            "description": "Veliko Tarnovo",
+            "image": "https://live.staticflickr.com/65535/52898783659_0c9562677c_z.jpg",
+            "imagePosition": "vertical"
+          },
+          {
+            "id": 3,
+            "category": "nature",
+            "description": "Bezbog Hut",
+            "image": "https://live.staticflickr.com/65535/52898642896_6895950245_z.jpg",
+            "imagePosition": "horizontal"
           },
           {
             "id": 4,
-            "category": "nature",
-            "description": "Tulum",
-            "image": "https://live.staticflickr.com/65535/52895937511_ca18940151_k.jpg"
+            "category": "city",
+            "description": "Bansko",
+            "image": "https://live.staticflickr.com/65535/52899093058_dd0aaf14a1_z.jpg",
+            "imagePosition": "vertical"
           }
         ]
       }

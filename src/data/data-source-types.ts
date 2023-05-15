@@ -3,6 +3,7 @@ export type Photo = {
   category: string;
   description: string
   image: string;
+  imagePosition: string
 };
 
 export type City = {
@@ -15,7 +16,6 @@ type Country = {
   id: string;
   name: string;
   photos: Photo[]
-  // cities: City[];
 };
 
 export type DataResponse = {
